@@ -8,7 +8,6 @@ import AdoptarArbolComponent from './components/AdoptarArbolComponent/AdoptarArb
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Bienvenidos />
     <AdoptarArbolComponent />
   </StrictMode>,
 )

@@ -2,7 +2,8 @@ import compraImage from '../../assets/compra.jpg'
 
 const AdoptarArbolComponent = ({ tree, onAdopt }: any) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+    
+    <div className=" max-w-sm rounded overflow-hidden shadow-lg bg-white mt-5 ml-5">
       <img className="w-full h-48 object-cover" src={compraImage} alt="{tree.name}" />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-green-700">name</div>
