@@ -1,7 +1,7 @@
 // components/BenefitsSection.tsx
 import React from 'react'; 
 import beneficiosImage from "./beneficios.jpg" // def. de una variable para llamar la img estatica
-
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 
 const Beneficios: React.FC = () => {
@@ -35,16 +35,7 @@ const Beneficios: React.FC = () => {
             </p>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <div className="text-green-500 mt-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                    className="w-5 h-5"
-                  >
-                    <path d="M13.485 1.929L6 9.414l-3.485-3.485-.707.707L6 10.828l8.192-8.192-.707-.707z" />
-                  </svg>
-                </div>
+              <CheckCircleIcon style={{ color: '#FF9E2F' }}  fontSize="large"/>
                 <div className="ml-3">
                   <h4 className="text-lg font-bold text-gray-900">Frescura garantizada</h4>
                   <p className="text-gray-600">
@@ -53,16 +44,7 @@ const Beneficios: React.FC = () => {
                 </div>
               </li>
               <li className="flex items-start">
-                <div className="text-green-500 mt-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                    className="w-5 h-5"
-                  >
-                    <path d="M13.485 1.929L6 9.414l-3.485-3.485-.707.707L6 10.828l8.192-8.192-.707-.707z" />
-                  </svg>
-                </div>
+              <CheckCircleIcon style={{ color: '#FF9E2F' }} fontSize="large" />
                 <div className="ml-3">
                   <h4 className="text-lg font-bold text-gray-900">Apoyo a los agricultores locales</h4>
                   <p className="text-gray-600">
@@ -71,16 +53,7 @@ const Beneficios: React.FC = () => {
                 </div>
               </li>
               <li className="flex items-start">
-                <div className="text-green-500 mt-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                    className="w-5 h-5"
-                  >
-                    <path d="M13.485 1.929L6 9.414l-3.485-3.485-.707.707L6 10.828l8.192-8.192-.707-.707z" />
-                  </svg>
-                </div>
+              <CheckCircleIcon style={{ color: '#FF9E2F' }} fontSize="large"/>
                 <div className="ml-3">
                   <h4 className="text-lg font-bold text-gray-900">Sostenibilidad</h4>
                   <p className="text-gray-600">
@@ -90,7 +63,7 @@ const Beneficios: React.FC = () => {
               </li>
             </ul>
 
-            {/* Button */}
+            {/* BOTON */}
             <button className="mt-6 px-6 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-600 transition duration-300">
               Descubre más
             </button>
