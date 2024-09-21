@@ -5,9 +5,10 @@ import './index.css'
 import  Arboles  from './components/Arboles/Arboles.tsx'
 import  Bienvenidos  from './components/Bienvenidos/Bienvenidos.tsx'
 import AdoptarArbolComponent from './components/AdoptarArbolComponent/AdoptarArbolComponent.tsx'
+import Adoptar from './pages/Adoptar/Adoptar.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AdoptarArbolComponent />
+    <Adoptar />
   </StrictMode>,
 )

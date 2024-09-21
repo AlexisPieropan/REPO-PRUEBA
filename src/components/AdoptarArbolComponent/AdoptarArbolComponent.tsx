@@ -1,24 +1,32 @@
 import compraImage from '../../assets/compra.jpg'
+import "./AdoptarArbolComponente.css"
+import AgricultureIcon from '@mui/icons-material/Agriculture';
+import GiteIcon from '@mui/icons-material/Gite';
+import { GiFruitTree } from "react-icons/gi";
 
-const AdoptarArbolComponent = ({ tree, onAdopt }: any) => {
+const AdoptarArbolComponent = ({ datos, onAdopt }: any) => {
+
+
+
   return (
     
-    <div className=" max-w-sm rounded overflow-hidden shadow-lg bg-white mt-5 ml-5">
-      <img className="w-full h-48 object-cover" src={compraImage} alt="{tree.name}" />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2 text-green-700">name</div>
-        <p className="text-gray-700 text-base">Tipo: </p>
-        <p className="text-gray-700 text-base">Ubicación: </p>
-        <p className="text-orange-700 font-semibold text-lg">$ precio / año</p>
+    <div className=" max-w-sm rounded overflow-hidden shadow-lg bg-orange-300 mt-5 ml-5">
+      <img className="w-full h-48 object-cover" src={datos.imageUrl} alt="{datos.name}" />
+      <div className="px-12 py-4">
+        <div className="font-bold  text-xl mb-2 text-green-700"> {datos.name} </div>
+        <p className="text-gray-700 text-base pb-2"><GiFruitTree size={22} style={{ color: '#FFF', display:"inline" }}/>  Tipo: {datos.type} </p>
+        <p className="text-gray-700 text-base pb-2"> <GiteIcon style={{ color: '#FFF' }} />  Finca: {datos.location} </p>
+        <p className="text-gray-700 text-base pb-2"><AgricultureIcon style={{ color: '#FFF' }} /> Productor: "datos.productor" </p>
+        <p className="text-orange-700 font-semibold text-lg">Precio: $ {datos.price} / año</p>
         <button
-          onClick={() => onAdopt(tree.id)}
+          onClick={() => onAdopt(datos.id)}
           className="mt-4 w-full bg-green-700 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-200"
         >
           Adoptar este árbol
         </button>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default AdoptarArbolComponent;
